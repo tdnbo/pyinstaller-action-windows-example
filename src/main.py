@@ -1,4 +1,4 @@
-# import argparse
+# import argpars
 from gooey import Gooey, GooeyParser
 import os
 
