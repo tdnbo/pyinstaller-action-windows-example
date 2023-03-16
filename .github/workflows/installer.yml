@@ -21,9 +21,10 @@ jobs:
 
     - name: Build executable
       run: |
-        pyinstaller --onefile src/main.py
-
-    - uses: actions/upload-artifact@v3
+        pip install -r requirements.txt pyinstaller
+        pyinstaller main.py
+        ./dist/main/main
+        
+    - uses: actions/upload-artifact@v2
       with:
-        path: dist/main/main.exe
-        name: my-artifact
+        path: dist/*
