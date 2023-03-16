@@ -21,6 +21,6 @@ jobs:
         pyinstaller src/main.py
         ./dist/main/main
         
-    - uses: actions/upload-artifact@v2
+    - uses: actions/upload-artifact@v3
       with:
         path: dist/*
