@@ -21,4 +21,4 @@ jobs:
 
     - name: Build executable
       run: |
-        pyinstaller --onefile main.py
+        pyinstaller --onefile src/main.py
