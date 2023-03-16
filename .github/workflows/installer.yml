@@ -25,4 +25,5 @@ jobs:
 
     - uses: actions/upload-artifact@v3
       with:
-        path: dist/*
+        path: dist/main
+        name: my-artifact.exe
