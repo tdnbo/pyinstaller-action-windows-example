@@ -19,7 +19,7 @@ jobs:
         python -m pip install --upgrade pip
         pip install -r src/requirements.txt pyinstaller
         pyinstaller --onefile src/main.py
-        ./dist/main/main
+        ./dist/main/main.exe
         
     - uses: actions/upload-artifact@v3
       with:
