@@ -22,3 +22,7 @@ jobs:
     - name: Build executable
       run: |
         pyinstaller --onefile src/main.py
+
+    - uses: actions/upload-artifact@v2
+      with:
+        path: dist/*
